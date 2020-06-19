@@ -195,6 +195,18 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "CarrierSettings",
+	owner: "google",
+	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "SoterService",
 	owner: "realme",
 	apk: "proprietary/app/SoterService/SoterService.apk",
