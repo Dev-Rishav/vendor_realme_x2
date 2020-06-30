@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/bin/charger:$(TARGET_COPY_OUT_SYSTEM)/bin/charger \
     vendor/realme/x2/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/realme/x2/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
+    vendor/realme/x2/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
     vendor/realme/x2/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/realme/x2/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/realme/x2/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
@@ -177,6 +178,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/realme/x2/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
+    vendor/realme/x2/proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nxp.hardware.nfc@1.2-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.engnative.engineer@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.engnative.engsensor@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.engnative.engsensor@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service \
@@ -185,8 +187,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.hypnus@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.hardware.ktv@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.ktv@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-service \
+    vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.hardware.nfc@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.nfc@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.hardware.oiface@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.hardware.oiface@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.oppo.wifi.sniffer@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oppo.wifi.sniffer@1.0-service \
+    vendor/realme/x2/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
@@ -200,6 +204,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/realme/x2/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/realme/x2/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.0-service \
     vendor/realme/x2/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/realme/x2/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/realme/x2/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
@@ -386,6 +391,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/realme/x2/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.engnative.engsensor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.engnative.engsensor@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc \
@@ -394,9 +400,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.hardware.mmdisplayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.mmdisplayfeature@1.0-service.rc \
+    vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.hardware.nfc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.nfc@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.hardware.oiface@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.hardware.oiface@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.oppo.wifi.sniffer@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.wifi.sniffer@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-sscrpc-service.rc \
+    vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
@@ -414,16 +422,217 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
+    vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.secure_element@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.0-service.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/realme/x2/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-mtp-NQ3XX.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-NQ3XX.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-mtp-NQ4XX.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-NQ4XX.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-mtp_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp_default.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-mtp_rf1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp_rf1.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-mtp_rf2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp_rf2.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-qrd-NQ3XX.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-NQ3XX.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-qrd-NQ4XX.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-NQ4XX.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-qrd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd_default.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-qrd_rf1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd_rf1.conf \
+    vendor/realme/x2/proprietary/vendor/etc/libnfc-qrd_rf2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd_rf2.conf \
     vendor/realme/x2/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/realme/x2/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19015:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19015 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19040:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19040 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19101:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19101 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19161:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19161 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19191:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19191 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19362_JP:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19362_JP \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19501:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19501 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19521:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19521 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19525:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19525 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19591:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19591 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-mtp-SN100.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-mtp-SN100.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_18073:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_18073 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_18593:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_18593 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19011:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19011 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19015:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19015 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19040:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19040 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19101:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19101 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19161:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19161 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19191:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19191 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19305:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19305 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19354:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19354 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19362_JP:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19362_JP \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19501:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19501 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19521:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19521 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19525:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19525 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19591:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19591 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nci_common.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nci_common.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp.conf_18073:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf_18073 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp.conf_18593:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf_18593 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp.conf_19011:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf_19011 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp.conf_19305:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf_19305 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp.conf_19354:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf_19354 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf_18073:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf_18073 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf_18593:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf_18593 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf_19011:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf_19011 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf_19305:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf_19305 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf_19354:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf_19354 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_18073:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_18073 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19011:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19011 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19015:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19015 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19040:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19040 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19101:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19101 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19161:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19161 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19191:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19191 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19354:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19354 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19501:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19501 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19521:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19521 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_beijing_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_beijing_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_changchun_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_changchun_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_changsha_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_changsha_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_changsha_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_changsha_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_changsha_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_changsha_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_changsha_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_changsha_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_changsha_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_changsha_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_chongqing_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_chongqing_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_chongqing_config.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_chongqing_config.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_chongqing_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_chongqing_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_chongqing_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_chongqing_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_chongqing_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_chongqing_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_chongqing_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_chongqing_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_chongqing_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_chongqing_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_dalian_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_dalian_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19015:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19015 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19040:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19040 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19101:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19101 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19191:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19191 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_default_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_default_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_18073:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_18073 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19011:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19011 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19015:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19015 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19040:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19040 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19101:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19101 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19161:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19161 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19191:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19191 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19354:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19354 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19501:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19501 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19521:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19521 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_guangzhou_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_guangzhou_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_haerbin_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_haerbin_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_hefei_config.conf_19101:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_hefei_config.conf_19101 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_menjincard_config.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_menjincard_config.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_menjincard_config.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_menjincard_config.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_menjincard_config.conf_19101:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_menjincard_config.conf_19101 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_menjincard_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_menjincard_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_nanjing_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_nanjing_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_nanning_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_nanning_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_nanning_config.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_nanning_config.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_nanning_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_nanning_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_nanning_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_nanning_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_nanning_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_nanning_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_nanning_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_nanning_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_nanning_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_nanning_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_qingdao_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_qingdao_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_qingdao_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_qingdao_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shanghai_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shanghai_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shanghai_config.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shanghai_config.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shanghai_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shanghai_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shanghai_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shanghai_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shanghai_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shanghai_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shanghai_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shanghai_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_18073:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_18073 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19011:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19011 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19015:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19015 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19040:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19040 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19101:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19101 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19161:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19161 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19191:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19191 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19354:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19354 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19501:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19501 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19521:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19521 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_shenzhen_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_shenzhen_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_suzhou_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_suzhou_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_suzhou_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_suzhou_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_suzhou_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_suzhou_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_suzhou_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_suzhou_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_suzhou_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_suzhou_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_taizhou_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_taizhou_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_taizhou_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_taizhou_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19065:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19065 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19066:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19066 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19125:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19125 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_xiamen_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_xiamen_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_zhengzhou_config.conf_19031:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_zhengzhou_config.conf_19031 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_zhengzhou_config.conf_19081:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_zhengzhou_config.conf_19081 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_zhengzhou_config.conf_19111:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_zhengzhou_config.conf_19111 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_zhengzhou_config.conf_19165:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_zhengzhou_config.conf_19165 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_zhengzhou_config.conf_19331:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_zhengzhou_config.conf_19331 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/libnfc_zhengzhou_config.conf_19771:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc_zhengzhou_config.conf_19771 \
+    vendor/realme/x2/proprietary/vendor/etc/nfc/nfc_conf_ref:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/nfc_conf_ref \
     vendor/realme/x2/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/realme/x2/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/realme/x2/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/realme/x2/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/realme/x2/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/realme/x2/proprietary/vendor/etc/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.nfc.beam.xml \
+    vendor/realme/x2/proprietary/vendor/etc/permissions/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
+    vendor/realme/x2/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
+    vendor/realme/x2/proprietary/vendor/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.nfc.xml \
     vendor/realme/x2/proprietary/vendor/etc/permissions/vendor-oppo-engnative-engineer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-oppo-engnative-engineer.xml \
     vendor/realme/x2/proprietary/vendor/etc/permissions/vendor-oppo-engnative-engsensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-oppo-engnative-engsensor.xml \
     vendor/realme/x2/proprietary/vendor/etc/permissions/vendor-oppo-hardware.cryptoeng.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-oppo-hardware.cryptoeng.xml \
@@ -506,6 +715,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/etc/sensors/config/talos_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/talos_tmd2725.json \
     vendor/realme/x2/proprietary/vendor/etc/sensors/config/tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3701.json \
     vendor/realme/x2/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/realme/x2/proprietary/vendor/etc/sn100u_nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_nfcon.pnscr \
     vendor/realme/x2/proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml \
     vendor/realme/x2/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/realme/x2/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
@@ -635,6 +845,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/firmware/widevine.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b06 \
     vendor/realme/x2/proprietary/vendor/firmware/widevine.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b07 \
     vendor/realme/x2/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt \
+    vendor/realme/x2/proprietary/vendor/lib/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.secure_element@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/realme/x2/proprietary/vendor/lib/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.truly_cmb433.so \
     vendor/realme/x2/proprietary/vendor/lib/camera/com.qti.sensor.gc02m0b.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.gc02m0b.so \
@@ -754,6 +965,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/lib/hw/vendor.oppo.hardware.ktv@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.ktv@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib/hw/vendor.oppo.hardware.oiface@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.oiface@1.0-impl.so \
+    vendor/realme/x2/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
@@ -895,6 +1107,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/realme/x2/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/realme/x2/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
+    vendor/realme/x2/proprietary/vendor/lib/libpn547_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn547_fw.so \
+    vendor/realme/x2/proprietary/vendor/lib/libpn548ad_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn548ad_fw.so \
+    vendor/realme/x2/proprietary/vendor/lib/libpn551_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn551_fw.so \
+    vendor/realme/x2/proprietary/vendor/lib/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn553_fw.so \
+    vendor/realme/x2/proprietary/vendor/lib/libpn557_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn557_fw.so \
     vendor/realme/x2/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
     vendor/realme/x2/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/realme/x2/proprietary/vendor/lib/libqcodec2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2.so \
@@ -997,6 +1214,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/lib/libwigig_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwigig_utils.so \
     vendor/realme/x2/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/realme/x2/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
+    vendor/realme/x2/proprietary/vendor/lib/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci.nqx.default.hw.so \
     vendor/realme/x2/proprietary/vendor/lib/qcom.camera.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcom.camera.log.so \
     vendor/realme/x2/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so \
     vendor/realme/x2/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
@@ -1070,6 +1288,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/lib64/android.frameworks.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.fingerprintservice@1.0.so \
     vendor/realme/x2/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-external.so \
     vendor/realme/x2/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
+    vendor/realme/x2/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/realme/x2/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
@@ -1207,6 +1426,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib64/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib64/hw/vendor.oppo.hardware.oiface@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.oiface@1.0-impl.so \
+    vendor/realme/x2/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/realme/x2/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
@@ -1536,6 +1756,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/realme/x2/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/realme/x2/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/realme/x2/proprietary/vendor/lib64/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.nqx.default.hw.so \
+    vendor/realme/x2/proprietary/vendor/lib64/se_nq_extn_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/se_nq_extn_client.so \
     vendor/realme/x2/proprietary/vendor/lib64/qcom.camera.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcom.camera.log.so \
     vendor/realme/x2/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/realme/x2/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
@@ -1551,6 +1773,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/realme/x2/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@1.0.so \
+    vendor/realme/x2/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@1.1.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.engnative.engineer@1.0.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.engnative.engsensor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.engnative.engsensor@1.0.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.engnative.transfer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.engnative.transfer@1.0.so \
@@ -1562,6 +1786,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.hypnus@1.0.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.hardware.ktv@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.ktv@1.0.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so \
+    vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.nfc@1.0.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.hardware.oiface@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.oiface@1.0.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so \
     vendor/realme/x2/proprietary/vendor/lib64/vendor.oppo.hardware.wifi.sniffer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.wifi.sniffer@1.0.so \
