@@ -77,25 +77,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libthermalclient",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.capabilityconfigstore@1.0",
 	owner: "realme",
 	strip: {
@@ -225,7 +206,7 @@ android_app_import {
 
 android_app_import {
 	name: "HotwordEnrollmentOKGoogleWCD9340",
-	owner: "oneplus",
+	owner: "realme",
 	apk: "proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk",
 	certificate: "platform",
 	dex_preopt: {
@@ -236,7 +217,7 @@ android_app_import {
 
 android_app_import {
 	name: "HotwordEnrollmentXGoogleWCD9340",
-	owner: "oneplus",
+	owner: "realme",
 	apk: "proprietary/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk",
 	certificate: "platform",
 	dex_preopt: {
