@@ -195,18 +195,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "CarrierSettings",
-	owner: "google",
-	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "SoterService",
 	owner: "realme",
 	apk: "proprietary/app/SoterService/SoterService.apk",
@@ -214,30 +202,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-}
-
-android_app_import {
-	name: "HotwordEnrollmentOKGoogleWCD9340",
-	owner: "realme",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleWCD9340",
-	owner: "realme",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
 }
 
 android_app_import {
@@ -358,6 +322,42 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CarrierSettings",
+	owner: "google",
+	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentOKGoogleWCD9340",
+	owner: "realme",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentXGoogleWCD9340",
+	owner: "realme",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 	product_specific: true,
 }
 

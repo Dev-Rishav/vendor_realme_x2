@@ -82,4 +82,14 @@ NXP_RF_CONF_BLK_10={
 	      A0,   0D,   06,   82,   82,   43,   80,   00,   00,
 	      A0,   0D,   06,   80,   82,   4F,   80,   00,   00
 }
+#add A0, 85, 04, 50, 0A, A8, 2C for mute RATS on Mifare 1K 2020.04.02 bugid:2917116
+NXP_CORE_CONF_EXTN={20, 02, 21, 07,
+    A0, 07, 01, 01,
+    A0, EC, 01, 01,
+    A0, ED, 01, 01,
+    A0, B8, 01, 00,
+    A0, 8E, 01, 01,
+    A0, 47, 02, 00, 27,
+    A0, 85, 04, 50, 08, A8, 2C
+}
 #Need this line to end file
